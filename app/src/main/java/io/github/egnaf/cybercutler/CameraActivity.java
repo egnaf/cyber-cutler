@@ -64,6 +64,7 @@ public class CameraActivity extends AppCompatActivity {
     }
 
     public void takePhoto(View view) {
+        openDetectedCar();
         cameraKitView.captureImage(new  CameraKitView.ImageCallback() {
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
@@ -71,7 +72,6 @@ public class CameraActivity extends AppCompatActivity {
                 System.out.println(111111);
                 Bitmap bitmap = BitmapFactory.decodeByteArray(capturedImage, 0, capturedImage.length);
                 imageView.setImageBitmap(bitmap);
-                openDetectedCar();
             }
         });
     }
