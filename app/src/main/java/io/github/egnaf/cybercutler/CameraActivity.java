@@ -1,5 +1,6 @@
 package io.github.egnaf.cybercutler;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Build;
@@ -51,6 +52,11 @@ public class CameraActivity extends AppCompatActivity {
         super.onStop();
     }
 
+    public void openDetectedCar() {
+        Intent main = new Intent(this, DetectingActivity.class);
+        startActivity(main);
+    }
+
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -65,6 +71,7 @@ public class CameraActivity extends AppCompatActivity {
                 System.out.println(111111);
                 Bitmap bitmap = BitmapFactory.decodeByteArray(capturedImage, 0, capturedImage.length);
                 imageView.setImageBitmap(bitmap);
+                openDetectedCar();
             }
         });
     }

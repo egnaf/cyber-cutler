@@ -10,7 +10,7 @@
         android:id="@+id/imageView4"
         android:layout_width="418dp"
         android:layout_height="718dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="48dp"
         android:src="@drawable/mock_collection"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
