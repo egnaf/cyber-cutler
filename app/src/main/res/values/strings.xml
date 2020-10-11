@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cyber Cutler</string>
+    <string name="title_home">Главная</string>
+    <string name="title_search">Поиск</string>
+    <string name="title_focus">Сканировать</string>
+    <string name="title_collection">Коллекции</string>
+    <string name="title_user">Профиль</string>
+</resources>

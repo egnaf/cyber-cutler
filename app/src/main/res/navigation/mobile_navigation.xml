@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="io.github.egnaf.cybercutler.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="io.github.egnaf.cybercutler.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_focus"
+        android:name="io.github.egnaf.cybercutler.ui.focus.FocusFragment"
+        android:label="@string/title_focus"
+        tools:layout="@layout/fragment_focus" />
+
+    <fragment
+        android:id="@+id/navigation_collection"
+        android:name="io.github.egnaf.cybercutler.ui.collection.CollectionFragment"
+        android:label="@string/title_collection"
+        tools:layout="@layout/fragment_collection" />
+
+    <fragment
+        android:id="@+id/navigation_user"
+        android:name="io.github.egnaf.cybercutler.ui.user.UserFragment"
+        android:label="@string/title_user"
+        tools:layout="@layout/fragment_user" />
+
+</navigation>
